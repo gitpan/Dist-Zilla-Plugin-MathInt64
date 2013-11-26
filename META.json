@@ -1,0 +1,64 @@
+{
+   "abstract" : "Include the Math::Int64 C client API in your distribution",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Zilla-Plugin-MathInt64",
+   "no_index" : {
+      "directory" : [
+         "corpus"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30",
+            "File::ShareDir::Install" : "0.03"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla::File::InMemory" : "0",
+            "Dist::Zilla::Role::FileGatherer" : "0",
+            "Dist::Zilla::Role::FileMunger" : "0",
+            "Dist::Zilla::Role::Plugin" : "0",
+            "Dist::Zilla::Role::PrereqSource" : "0",
+            "File::ShareDir" : "0",
+            "Moose" : "0",
+            "Path::Class::Dir" : "0",
+            "Path::Class::File" : "0",
+            "perl" : "5.006"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Path::Class" : "0",
+            "Test::DZil" : "0",
+            "Test::More" : "0.88"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/dist-zilla-plugin-mathint64/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/Dist-Zilla-Plugin-MathInt64/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/dist-zilla-plugin-mathint64.git",
+         "web" : "https://github.com/plicease/dist-zilla-plugin-mathint64"
+      }
+   },
+   "version" : "0.04"
+}
+

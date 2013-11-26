@@ -1,0 +1,14 @@
+Dist::Zilla::File::InMemory
+Dist::Zilla::Role::FileGatherer
+Dist::Zilla::Role::FileMunger
+Dist::Zilla::Role::Plugin
+Dist::Zilla::Role::PrereqSource
+ExtUtils::MakeMaker
+File::ShareDir
+File::ShareDir::Install
+Moose
+Path::Class
+Path::Class::Dir
+Path::Class::File
+Test::DZil
+Test::More
