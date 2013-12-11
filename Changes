@@ -1,5 +1,9 @@
 Revision history for Dist-Zilla-Plugin-MathInt64
 
+0.05      2013-12-11 02:47:23 -0500
+  - added typemap_path option
+  - switched to Module::Build
+
 0.04      2013-11-26 11:30:32 -0500
   - documentation improvements
   - first CPAN release

@@ -3,12 +3,12 @@ abstract: 'Include the Math::Int64 C client API in your distribution'
 author:
   - 'Graham Ollis <plicease@cpan.org>'
 build_requires:
+  Module::Build: 0.3601
   Path::Class: 0
   Test::DZil: 0
   Test::More: 0.88
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
-  File::ShareDir::Install: 0.03
+  Module::Build: 0.3601
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830'
 license: perl
@@ -25,6 +25,7 @@ requires:
   Dist::Zilla::Role::FileMunger: 0
   Dist::Zilla::Role::Plugin: 0
   Dist::Zilla::Role::PrereqSource: 0
+  ExtUtils::Typemaps: 0
   File::ShareDir: 0
   Moose: 0
   Path::Class::Dir: 0
@@ -34,4 +35,4 @@ resources:
   bugtracker: https://github.com/plicease/dist-zilla-plugin-mathint64/issues
   homepage: http://perl.wdlabs.com/Dist-Zilla-Plugin-MathInt64/
   repository: git://github.com/plicease/dist-zilla-plugin-mathint64.git
-version: 0.04
+version: 0.05

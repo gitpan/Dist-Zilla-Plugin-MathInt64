@@ -1,13 +1,15 @@
 .travis.yml
+Build.PL
 Changes
 INSTALL
 LICENSE
 MANIFEST
 META.json
 META.yml
-Makefile.PL
 README
 corpus/DZT/lib/DZT.pm
+corpus/DZT2/lib/DZT2.pm
+corpus/DZT2/typemap
 dist.ini
 inc/prep.pl
 lib/Dist/Zilla/Plugin/MathInt64.pm
