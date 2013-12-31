@@ -6,7 +6,7 @@ use ExtUtils::Typemaps;
 use File::ShareDir qw( dist_dir );
 
 # ABSTRACT: Include the Math::Int64 C client API in your distribution
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 with 'Dist::Zilla::Role::Plugin';
@@ -61,7 +61,7 @@ sub gather_files
 {
   my($self) = @_;
   
-  foreach my $source_name (qw( perl_math_int64.c  perl_math_int64.h ))
+  foreach my $source_name (qw( perl_math_int64.c  perl_math_int64.h perl_math_int64_types.h ))
   {
     my $dst = defined $self->dir
     ? join('/', $self->dir, $source_name)
@@ -78,8 +78,6 @@ sub gather_files
   
   return unless $self->typemap;
   
-  $DB::single = 1;  
-
   unless(grep { $_->name eq $self->typemap_path } @{ $self->zilla->files })
   {
     $self->log("create " . $self->typemap_path);
@@ -140,7 +138,7 @@ Dist::Zilla::Plugin::MathInt64 - Include the Math::Int64 C client API in your di
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -158,8 +156,12 @@ in your xs (lib/MyDist.xs):
  #include "XSUB.h"
  #include "ppport.h"
  
+ /* provides int64_t and uint64_t if not   *
+  * already available                      */
+ #include "perl_math_int64_types.h"
+ 
  /* #define MATH_INT64_NATIVE_IF_AVAILABLE */
- #include "math_int64.h"
+ #include "perl_math_int64.h"
  
  MODULE = MyDist  PACKAGE = MyDist
  
