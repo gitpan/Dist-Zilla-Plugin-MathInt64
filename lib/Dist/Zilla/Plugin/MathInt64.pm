@@ -6,7 +6,7 @@ use ExtUtils::Typemaps;
 use File::ShareDir qw( dist_dir );
 
 # ABSTRACT: Include the Math::Int64 C client API in your distribution
-our $VERSION = '0.06'; # VERSION
+our $VERSION = '0.07'; # VERSION
 
 
 with 'Dist::Zilla::Role::Plugin';
@@ -138,7 +138,7 @@ Dist::Zilla::Plugin::MathInt64 - Include the Math::Int64 C client API in your di
 
 =head1 VERSION
 
-version 0.06
+version 0.07
 
 =head1 SYNOPSIS
 

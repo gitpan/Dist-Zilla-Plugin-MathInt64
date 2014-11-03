@@ -4,7 +4,7 @@
       "Graham Ollis <plicease@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.008, CPAN::Meta::Converter version 2.133380",
+   "generated_by" : "Dist::Zilla version 5.021, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -40,23 +40,23 @@
       },
       "test" : {
          "requires" : {
-            "Path::Class" : "0",
-            "Test::More" : "0.88"
+            "Path::Class" : "0.26",
+            "Test::More" : "0.94"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/plicease/dist-zilla-plugin-mathint64/issues"
+         "web" : "https://github.com/plicease/Dist-Zilla-Plugin-MathInt64/issues"
       },
-      "homepage" : "http://perl.wdlabs.com/Dist-Zilla-Plugin-MathInt64/",
+      "homepage" : "http://perl.wdlabs.com/Dist-Zilla-Plugin-MathInt64",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/plicease/dist-zilla-plugin-mathint64.git",
-         "web" : "https://github.com/plicease/dist-zilla-plugin-mathint64"
+         "url" : "git://github.com/plicease/Dist-Zilla-Plugin-MathInt64.git",
+         "web" : "https://github.com/plicease/Dist-Zilla-Plugin-MathInt64"
       }
    },
-   "version" : "0.06"
+   "version" : "0.07"
 }
 
